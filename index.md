@@ -211,3 +211,8 @@ so you can be sure to process whatever is going on, though its not required.
 
 If an interrupt is fired externally while interrupts are disabled then the request will be ignored. It is up to the interrupter to decide if it wants to
 try again later or not as interrupt requests are not queued... they are either accepted or denied.
+
+## System Calls
+
+The actual system calls that exist are under development, but there is a means to extend the VM via system `devices` that are called on via a system call. 
+More about system calls will be documented here as they are solidifed.
