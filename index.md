@@ -7,11 +7,11 @@ Currently, the Skiff VM is under heavy development as its only about month old (
 
 *Quick Links*
 
-[SVM Instruction Set Doc](https://astroskiff.github.io/docs/instructions.md)
+[SVM Instruction Set Doc](https://github.com/astroskiff/astroskiff.github.io/blob/main/docs/instructions.md)
 
-[SVM Binary Encoding Doc](https://astroskiff.github.io/docs/binary_encoding.md)
+[SVM Binary Encoding Doc](https://github.com/astroskiff/astroskiff.github.io/blob/main/docs/binary_encoding.md)
 
-[SVM Assembler Doc](https://astroskiff.github.io/docs/assembler.md)
+[SVM Assembler Doc](https://github.com/astroskiff/astroskiff.github.io/blob/main/docs/assembler.md)
 
 [Skiff Repo](https://github.com/astroskiff/skiff)
 
