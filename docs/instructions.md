@@ -780,3 +780,52 @@ Level 3:
 **Format:** `dirq`
 **Description:** Disables interrupt requests
 **Example:**	`dirq` 
+
+## push_hw
+**Opcode** 0x2E
+**Instruction Layout:**
+```
+	[ Opcode ] [ Source ]
+  0000 0000 | 0000 0000 
+```
+**Format:** `push_hw <source register>`
+**Example:**	`push_hw i0`
+**Description:** Push a half word to the stack.
+After this operation, the stack pointer will be updated
+to reflect the size of the stack. 
+Failure to push data to stack will result in runtime error.
+
+## pop_hw
+**Opcode** 0x2F
+**Instruction Layout:**
+```
+	[ Opcode ] [ Dest ]
+  0000 0000 | 0000 0000 
+```
+**Format:** `pop_hw <dest register>`
+**Example:**	`pop_hw i0`
+**Description:** Pop a half word from the stack.
+After this operation, the stack pointer will be updated
+to reflect the size of the stack
+
+## shw
+**Opcode** 0x30
+**Instruction Layout:**
+```
+	[ Opcode ] [ Idx Reg ] [ Offst Reg ] [ Data Reg ]
+	0000 0000  | 0000 0000  | 0000 0000 |  0000 0000
+```
+**Format:** `shw <index register> <offset register> <data register>`
+**Example:**	`shw i0 i2 i3`
+**Description:** Stores a half word in a memory index, at an offset with data from data reg.
+
+## lhw
+**Opcode** 0x31
+**Instruction Layout:**
+```
+	[ Opcode ] [ Idx Reg ] [ Offst Reg ] [ Data Reg ]
+	0000 0000  | 0000 0000  | 0000 0000 |  0000 0000
+```
+**Format:** `lhw <index register> <offset register> <dest register>`
+**Example:**	`lhw i0 i2 i3`
+**Description:** Loads a half word from a memory index, at an offset into the dest register.
